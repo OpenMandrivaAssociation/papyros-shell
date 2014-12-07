@@ -26,6 +26,6 @@ emphasis on well-thought-out design.
 %make
 
 %install
-%makeinstall_std
+%makeinstall_std BUILDROOT=%{buildroot}
 
 %files
