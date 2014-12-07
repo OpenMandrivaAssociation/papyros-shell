@@ -9,6 +9,7 @@ Group:		Graphical desktop/Other
 URL:		https://github.com/quantum-os/quantum-shell
 Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	qt5-devel
+BuildRequires:	pkgconfig(Qt5Compositor)
 
 %description
 Quantum Shell is the desktop shell which conforms
