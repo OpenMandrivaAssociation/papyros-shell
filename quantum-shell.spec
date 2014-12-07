@@ -1,3 +1,4 @@
+%define debug_package %nil
 %define snap 20141207
 
 Summary:	Quantum desktop shell
