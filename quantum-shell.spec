@@ -18,7 +18,7 @@ easy-to-use operating system with a heavy
 emphasis on well-thought-out design.
 
 %prep
-%setup -q
+%setup -qc
 
 %build
 %qmake_qt5
