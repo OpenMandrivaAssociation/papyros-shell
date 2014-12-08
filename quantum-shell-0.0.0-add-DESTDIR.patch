@@ -1,0 +1,9 @@
+--- quantum-shell.pro	2014-12-08 17:54:54.714238707 +0000
++++ quantum-shell.pro.tpg	2014-12-08 17:54:42.000000000 +0000
+@@ -11,5 +11,5 @@
+ 
+ RESOURCES += quantum-shell.qrc
+ 
+-target.path = /usr/bin
++target.path = $$(DESTDIR)/usr/bin
+ INSTALLS += target
