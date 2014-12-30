@@ -33,3 +33,4 @@ mkdir -p %{buildroot}%{_bindir}
 install -m 755 -p quantum-shell %{buildroot}%{_bindir}/quantum-shell
 
 %files
+%{_bindir}/quantum-shell
