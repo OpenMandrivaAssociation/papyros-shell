@@ -29,6 +29,7 @@ emphasis on well-thought-out design.
 %make
 
 %install
-%makeinstall_std DESTDIR=%{buildroot}
+mkdir -p %{buildroot}%{_bindir}
+install -m 755 -p quantum-shell %{buildroot}%{_bindir}/quantum-shell
 
 %files
