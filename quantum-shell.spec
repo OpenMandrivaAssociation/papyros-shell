@@ -25,7 +25,7 @@ emphasis on well-thought-out design.
 %patch0 -p0
 
 %build
-%qmake_qt5
+%qmake_qt5 "DESTDIR=%{buildroot}"
 %make
 
 %install
