@@ -1,5 +1,5 @@
 %define debug_package %nil
-%define snap 20141207
+%define snap 20150109
 
 Summary:	Quantum desktop shell
 Name:		quantum-shell
