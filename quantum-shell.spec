@@ -24,10 +24,10 @@ easy-to-use operating system with a heavy
 emphasis on well-thought-out design.
 
 %prep
-%setup -qc
+%setup -qn %{name}-%{version}-%{snap}
 
 %build
-%qmake_qt5
+%qmake_qt5 *.pro
 %make
 
 %install
