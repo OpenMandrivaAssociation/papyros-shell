@@ -11,10 +11,11 @@ URL:		https://github.com/quantum-os/quantum-shell
 Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
+Requires:	qml-material
 
 %description
 Quantum Shell is the desktop shell which conforms
-to Google’s Material Design guidelines.
+to Google's Material Design guidelines.
 The focus will be on creating a stable and
 easy-to-use operating system with a heavy
 emphasis on well-thought-out design.
