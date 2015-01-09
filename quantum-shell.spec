@@ -9,7 +9,6 @@ License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/quantum-os/quantum-shell
 Source0:	%{name}-%{version}-%{snap}.tar.xz
-Patch0:		quantum-shell-0.0.0-add-DESTDIR.patch
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
 
@@ -22,15 +21,13 @@ emphasis on well-thought-out design.
 
 %prep
 %setup -qc
-%patch0 -p0
 
 %build
-%qmake_qt5 'target.path = %{buildroot}%{_bindir}'
+%qmake_qt5
 %make
 
 %install
-mkdir -p %{buildroot}%{_bindir}
-install -m 755 -p quantum-shell %{buildroot}%{_bindir}/quantum-shell
+%makeinstall_std INSTALL_ROOT=%{buildroot}
 
 %files
 %{_bindir}/quantum-shell
