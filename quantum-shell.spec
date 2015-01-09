@@ -12,6 +12,7 @@ Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
 Requires:	qml-material
+Requires:	qml-extras
 Requires:	qt5-qtdeclarative
 Requires:	qt5-qtgraphicaleffects
 
