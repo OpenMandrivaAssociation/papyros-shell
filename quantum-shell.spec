@@ -13,6 +13,7 @@ BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
 Requires:	qml-material
 Requires:	qt5-qtdeclarative
+Requires:	qt5-qtgraphicaleffects
 
 %description
 Quantum Shell is the desktop shell which conforms
