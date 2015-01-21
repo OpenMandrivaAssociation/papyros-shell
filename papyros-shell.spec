@@ -1,13 +1,14 @@
 %define debug_package %nil
-%define snap 20150109
+%define snap 20150121
 
-Summary:	Quantum desktop shell
-Name:		quantum-shell
+Summary:	Papyros desktop shell
+Name:		papyros-shell
 Version:	0.0.0
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	GPLv2
 Group:		Graphical desktop/Other
-URL:		https://github.com/quantum-os/quantum-shell
+URL:		https://github.com/papyros/papyros-shell
+# git archive --format=tar --prefix=papyros-shell-0.0.0-20150121/ HEAD | xz -vf > papyros-shell-0.0.0-20150121.tar.xz
 Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
@@ -15,9 +16,10 @@ Requires:	qml-material
 Requires:	qml-extras
 Requires:	qt5-qtdeclarative
 Requires:	qt5-qtgraphicaleffects
+%rename		quantum-shell
 
 %description
-Quantum Shell is the desktop shell which conforms
+Papyros Shell is the desktop shell which conforms
 to Google's Material Design guidelines.
 The focus will be on creating a stable and
 easy-to-use operating system with a heavy
@@ -34,4 +36,4 @@ emphasis on well-thought-out design.
 %makeinstall_std INSTALL_ROOT=%{buildroot}
 
 %files
-%{_bindir}/quantum-shell
+%{_bindir}/papyros-shell
