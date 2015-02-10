@@ -39,3 +39,5 @@ emphasis on well-thought-out design.
 
 %files
 %{_bindir}/papyros-shell
+%{_bindir}/papyros-session
+%{_datadir}/wayland-sessions/papyros.desktop
