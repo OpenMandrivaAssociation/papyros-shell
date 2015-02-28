@@ -1,10 +1,10 @@
 %define debug_package %nil
-%define snap 20150203
+%define snap 20150228
 
 Summary:	Papyros desktop shell
 Name:		papyros-shell
 Version:	0.0.0
-Release:	0.%{snap}.4
+Release:	0.%{snap}.1
 License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/papyros/papyros-shell
