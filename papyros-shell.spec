@@ -1,5 +1,5 @@
 %define debug_package %nil
-%define snap 20150228
+%define snap	20150325
 
 Summary:	Papyros desktop shell
 Name:		papyros-shell
