@@ -4,7 +4,7 @@
 Summary:	Papyros desktop shell
 Name:		papyros-shell
 Version:	0.0.0
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/papyros/papyros-shell
@@ -18,7 +18,6 @@ Requires:	qml-material
 Requires:	qml-extras
 Requires:	qt5-qtdeclarative
 Requires:	qt5-qtgraphicaleffects
-Requires:	%{_lib}qt5gui5-kms
 Requires:	%{_lib}qt5gui5-eglfs
 Requires:	%{_lib}qt5gui5-x11
 %rename		quantum-shell
