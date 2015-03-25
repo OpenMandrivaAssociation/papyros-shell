@@ -21,6 +21,7 @@ Requires:	gsettings-qt
 Requires:	files-app
 Requires:	qt5-qtdeclarative
 Requires:	qt5-qtgraphicaleffects
+Requires:	qt5-qtquickcontrols
 Requires:	%{_lib}qt5gui5-eglfs
 Requires:	%{_lib}qt5gui5-x11
 %rename		quantum-shell
