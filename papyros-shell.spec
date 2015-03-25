@@ -16,6 +16,9 @@ BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
 Requires:	qml-material
 Requires:	qml-extras
+Requires:	qml-desktop
+Requires:	gsettings-qt
+Requires:	files-app
 Requires:	qt5-qtdeclarative
 Requires:	qt5-qtgraphicaleffects
 Requires:	%{_lib}qt5gui5-eglfs
