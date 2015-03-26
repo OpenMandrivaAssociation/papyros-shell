@@ -4,7 +4,7 @@
 Summary:	Papyros desktop shell
 Name:		papyros-shell
 Version:	0.0.0
-Release:	0.%{snap}.3
+Release:	0.%{snap}.4
 License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/papyros/papyros-shell
@@ -14,6 +14,7 @@ URL:		https://github.com/papyros/papyros-shell
 Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
+BuildRequires:	pkgconfig(gsettings-qt)
 Requires:	qml-material
 Requires:	qml-extras
 Requires:	qml-desktop
@@ -37,6 +38,7 @@ emphasis on well-thought-out design.
 %setup -qn %{name}-%{version}-%{snap}
 
 %build
+./qrc.py qml images > papyros-shell.qrc
 %qmake_qt5 *.pro
 %make
 
