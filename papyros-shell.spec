@@ -1,23 +1,23 @@
 %define debug_package %nil
-%define snap	20150408
+%define snap 20150419
 
 Summary:	Papyros desktop shell
 Name:		papyros-shell
-Version:	0.0.0
+Version:	0.0.5
 Release:	1.%{snap}.1
 License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/papyros/papyros-shell
 # git clone https://github.com/papyros/papyros-shell.git
-# git archive --format=tar --prefix papyros-shell-0.0.0-$(date +%Y%m%d)/ HEAD | xz -vf > papyros-shell-0.0.0-$(date +%Y%m%d).tar.xz
+# git archive --format=tar --prefix papyros-shell-0.0.5-$(date +%Y%m%d)/ HEAD | xz -vf > papyros-shell-0.0.5-$(date +%Y%m%d).tar.xz
 
 Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
 BuildRequires:	pkgconfig(gsettings-qt)
-Requires:	qml-material
-Requires:	qml-extras
-Requires:	qml-desktop
+Requires:	qml-material >= 0.0.6
+Requires:	qml-extras >= 0.0.5
+Requires:	qml-desktop >= 0.0.5
 Requires:	gsettings-qt
 Requires:	files-app
 Requires:	qt5-qtdeclarative
