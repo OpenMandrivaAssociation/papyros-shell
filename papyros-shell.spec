@@ -4,7 +4,7 @@
 Summary:	Papyros desktop shell
 Name:		papyros-shell
 Version:	0.0.5
-Release:	1.%{snap}.1
+Release:	1.%{snap}.2
 License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/papyros/papyros-shell
@@ -25,7 +25,6 @@ BuildRequires:	cmake(PulseAudio)
 BuildRequires:	cmake(KF5ModemManagerQt)
 Requires:	qml-material >= 0.0.6
 Requires:	qml-extras >= 0.0.5
-Requires:	qml-desktop >= 0.0.5
 Requires:	gsettings-qt
 Requires:	files-app
 Requires:	qt5-qtdeclarative
