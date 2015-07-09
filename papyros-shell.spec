@@ -14,6 +14,7 @@ URL:		https://github.com/papyros/papyros-shell
 Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	qt5-devel
 BuildRequires:	pkgconfig(Qt5Compositor)
+BuildRequires:	pkgconfig(alsa)
 BuildRequires:	extra-cmake-modules5
 BuildRequires:	cmake(qt5xdg)
 BuildRequires:	pam-devel
