@@ -14,7 +14,7 @@ URL:		https://github.com/papyros/papyros-shell
 Source0:	%{name}-%{version}-%{snap}.tar.xz
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(papyros)
+BuildRequires:	cmake(Papyros)
 BuildRequires:	cmake(qt5xdg)
 BuildRequires:	cmake(GreenIsland)
 BuildRequires:	cmake(PulseAudio)
