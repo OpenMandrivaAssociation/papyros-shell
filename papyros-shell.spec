@@ -1,10 +1,10 @@
 %define debug_package %nil
-%define snap 20150709
+%define snap 20160127
 
 Summary:	Papyros desktop shell
 Name:		papyros-shell
 Version:	0.0.5
-Release:	1.%{snap}.3
+Release:	1.%{snap}.4
 License:	GPLv2
 Group:		Graphical desktop/Other
 URL:		https://github.com/papyros/papyros-shell
@@ -12,21 +12,33 @@ URL:		https://github.com/papyros/papyros-shell
 # git archive --format=tar --prefix papyros-shell-0.0.5-$(date +%Y%m%d)/ HEAD | xz -vf > papyros-shell-0.0.5-$(date +%Y%m%d).tar.xz
 
 Source0:	%{name}-%{version}-%{snap}.tar.xz
-BuildRequires:	qt5-devel
-BuildRequires:	pkgconfig(Qt5Compositor)
 BuildRequires:	pkgconfig(alsa)
-BuildRequires:	extra-cmake-modules5
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(papyros)
 BuildRequires:	cmake(qt5xdg)
-BuildRequires:	pam-devel
 BuildRequires:	cmake(GreenIsland)
+BuildRequires:	cmake(PulseAudio)
+BuildRequires:	cmake(KF5Solid)
+BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5Declarative)
 BuildRequires:	cmake(KF5NetworkManagerQt)
-BuildRequires:	cmake(PulseAudio)
 BuildRequires:	cmake(KF5ModemManagerQt)
-Requires:	qml-material >= 0.0.6
-Requires:	qml-extras >= 0.0.5
+BuildRequires:	pkgconfig(mobile-broadband-provider-info)
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5DBus)
+BuildRequires:	pkgconfig(Qt5Xml)
+BuildRequires:	pkgconfig(Qt5Gui)
+BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(Qt5Qml)
+BuildRequires:	pkgconfig(Qt5Quick)
+BuildRequires:	pkgconfig(Qt5WaylandClient)
+BuildRequires:	pkgconfig(Qt5Compositor)
+BuildRequires:	pkgconfig(Qt5Network)
+BuildRequires:	pam-devel
+Requires:	qml-material >= 0.2.0
 Requires:	files-app
 Requires:	settings-app
+Requires:	terminal-app
 Requires:	qt5-qtdeclarative
 Requires:	qt5-qtgraphicaleffects
 Requires:	qt5-qtquickcontrols
@@ -41,7 +53,7 @@ The focus will be on creating a stable and
 easy-to-use operating system with a heavy
 emphasis on well-thought-out design.
 
-%package	sddm-theme	
+%package	sddm-theme
 Summary:	%{name}-sddm-theme
 Group:		Graphical desktop/Other
 
