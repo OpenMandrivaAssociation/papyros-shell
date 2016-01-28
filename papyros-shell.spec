@@ -66,11 +66,15 @@ sddm theme for %{name}
 %build
 # https://github.com/papyros/papyros-shell/issues/140
 sed -i 's!-Werror!!g' CMakeLists.txt
+
+# (tpg) ugly workaround for broken cmake
+ln -sf %{buildroot}/usr/include/qt5 %{buildroot}/usr/include/qt
+
 %cmake_qt5
 %make
 
 %install
-%makeinstall_std -C build INSTALL_ROOT=%{buildroot}
+%makeinstall_std -C build
 
 %files
 %{_bindir}/papyros-session
