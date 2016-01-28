@@ -68,7 +68,7 @@ sddm theme for %{name}
 sed -i 's!-Werror!!g' CMakeLists.txt
 
 # (tpg) ugly workaround for broken cmake
-ln -sf %{buildroot}/usr/include/qt5 %{buildroot}/usr/include/qt
+ln -sf /usr/include/qt5 /usr/include/qt
 
 %cmake_qt5
 %make
